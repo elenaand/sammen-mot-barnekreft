@@ -27,7 +27,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="h-16 px-4 bg-[#ececec] flex items-center justify-between sticky top-0 z-50 w-full">
+          <p>Logo</p>
+          <p>Sammen mot barnekreft</p>
+          <p>Lenker</p>
+        </header>
+        <div className="h-screen">{children}</div>
+        <footer className="h-32 bg-[#ececec] flex items-center justify-center">
+          <ul>
+            <li> org.nr: 123 456 789 | © 2026 Sammen mot barnekreft</li>
+            <li>instagram</li>
+            <li>facebook</li>
+          </ul>
+        </footer>
       </body>
     </html>
   );
