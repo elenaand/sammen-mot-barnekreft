@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,14 +26,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <header className="h-16 px-4 bg-[#ececec] flex items-center justify-between sticky top-0 z-50 w-full">
-          <p>Logo</p>
-          <p>Sammen mot barnekreft</p>
-          <p>Lenker</p>
+          <Link href="/">Sammen mot barnekreft</Link>
+          <div className="flex gap-2">
+            <Link href="/">Om oss</Link>
+            <Link href="/kunstauksjon">Kunstauksjon</Link>
+            <Link href="/armbaand">Armbånd</Link>
+          </div>
         </header>
-        <div className="h-screen">{children}</div>
+        <div className="grow">{children}</div>
         <footer className="h-32 bg-[#ececec] flex items-center justify-center">
           <ul>
             <li> org.nr: 123 456 789 | © 2026 Sammen mot barnekreft</li>

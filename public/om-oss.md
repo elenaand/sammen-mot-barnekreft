@@ -8,8 +8,8 @@ Håper du har lyst til å bli med på denne reisen med oss!
 
 [example@example.com](mailto:example@example.com)
 
-## Sammarbeidspartnere
+## Samarbeidspartnere
 
-Vi er stolte av å sammarbeide med
+Vi er stolte av å samarbeide med
 
 [link til partner](http://example.com)
