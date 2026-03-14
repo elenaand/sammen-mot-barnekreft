@@ -6,5 +6,5 @@ export default function Home() {
   const filePath = path.join(process.cwd(), "public/om-oss.md");
   const content = fs.readFileSync(filePath, "utf8");
 
-  return <div className="p-8 max-w-3xl"><MarkdownRenderer content={content} /></div>;
+  return <MarkdownRenderer content={content} />;
 }

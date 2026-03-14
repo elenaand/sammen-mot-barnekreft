@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import { Instagram } from "lucide-react";
 import Header from "@/src/components/Header";
 import Footer from "../components/Footer";
 
@@ -32,7 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         <Header />
-        <div className="grow">{children}</div>
+        <div className="grow p-8 md:px-16 md:py-8 max-w-3xl prose">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
