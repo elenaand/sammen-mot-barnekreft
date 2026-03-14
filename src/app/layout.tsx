@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 import { Instagram } from "lucide-react";
 import Header from "@/src/components/Header";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,21 +33,7 @@ export default function RootLayout({
       >
         <Header />
         <div className="grow">{children}</div>
-        <footer className="h-32 bg-[#ececec] flex items-center justify-center">
-          <ul>
-            <li> org.nr: 123 456 789 | © 2026 Sammen mot barnekreft</li>
-            <li>
-              <a
-                href="https://www.instagram.com/sammenmotbarnekreft"
-                target="_blank"
-                className="flex items-center gap-1"
-              >
-                <Instagram size={16} />
-                Instagram
-              </a>
-            </li>
-          </ul>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

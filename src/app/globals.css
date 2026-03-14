@@ -30,10 +30,9 @@ h2 {
 }
 
 p {
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
 }
 
 a {
-  color: black;
   text-decoration: underline;
 }
