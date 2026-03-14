@@ -36,7 +36,7 @@ export default function Header() {
           <Link
             key={link.href}
             href={link.href}
-            className="uppercase text-xs tracking-widest hover:underline-offset-2 transition-colors px-8 py-4"
+            className="uppercase underline text-xs tracking-widest hover:underline-offset-2 transition-colors px-8 py-4"
           >
             {link.label}
           </Link>
