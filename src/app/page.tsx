@@ -1,12 +1,10 @@
-import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import MarkdownRenderer from "@/src/components/MarkdownRenderer";
 
 export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main>
-        <h1>Hei</h1>
-        <Link href="/about">About</Link>
-      </main>
-    </div>
-  );
+  const filePath = path.join(process.cwd(), "public/om-oss.md");
+  const content = fs.readFileSync(filePath, "utf8");
+
+  return <MarkdownRenderer content={content} />;
 }

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/src/components/Header";
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,23 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="no">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <header className="h-16 px-4 bg-[#ececec] flex items-center justify-between sticky top-0 z-50 w-full">
-          <p>Logo</p>
-          <p>Sammen mot barnekreft</p>
-          <p>Lenker</p>
-        </header>
-        <div className="h-screen">{children}</div>
-        <footer className="h-32 bg-[#ececec] flex items-center justify-center">
-          <ul>
-            <li> org.nr: 123 456 789 | © 2026 Sammen mot barnekreft</li>
-            <li>instagram</li>
-            <li>facebook</li>
-          </ul>
-        </footer>
+        <Header />
+        <main className="grow p-8 md:px-16 md:py-8 max-w-3xl prose">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
