@@ -29,13 +29,33 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        <header className="h-16 px-4 bg-[#ececec] flex items-center justify-between sticky top-0 z-50 w-full">
-          <Link href="/">Sammen mot barnekreft</Link>
-          <div className="flex gap-2">
-            <Link href="/">Om oss</Link>
-            <Link href="/kunstauksjon">Kunstauksjon</Link>
-            <Link href="/armbaand">Armbånd</Link>
-          </div>
+        <header className="h-16 px-8 bg-white border-b border-black/10 flex items-center justify-between sticky top-0 z-50 w-full">
+          <Link
+            href="/"
+            className="border-l-4 border-yellow-400 pl-3 font-bold uppercase tracking-wide text-md"
+          >
+            Sammen mot barnekreft
+          </Link>
+          <nav className="flex gap-6">
+            <Link
+              href="/"
+              className="uppercase text-xs tracking-widest hover:text-yellow-500 transition-colors"
+            >
+              Om oss
+            </Link>
+            <Link
+              href="/kunstauksjon"
+              className="uppercase text-xs tracking-widest hover:text-yellow-500 transition-colors"
+            >
+              Kunstauksjon
+            </Link>
+            <Link
+              href="/armbaand"
+              className="uppercase text-xs tracking-widest hover:text-yellow-500 transition-colors"
+            >
+              Armbånd
+            </Link>
+          </nav>
         </header>
         <div className="grow">{children}</div>
         <footer className="h-32 bg-[#ececec] flex items-center justify-center">
