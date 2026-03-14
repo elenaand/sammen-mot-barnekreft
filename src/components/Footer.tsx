@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Om oss" },
@@ -41,16 +41,31 @@ export default function Header() {
         </ul>
 
         {/* Social */}
-        <div className="pl-4 md:pl-0 text-xs">
-          <a
-            href="https://www.instagram.com/sammenmotbarnekreft"
-            target="_blank"
-            className="flex gap-2 items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
-          >
-            <Instagram size={16} />
-            Instagram
-          </a>
-        </div>
+        <ul
+          className="flex flex-col gap-2 pl-4 md:pl-0 text-xs"
+          aria-label="Sidemeny"
+        >
+          <li>
+            <a
+              href="https://www.instagram.com/sammenmotbarnekreft"
+              target="_blank"
+              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
+            >
+              <Instagram size={16} />
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:example@example.com"
+              target="_blank"
+              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
+            >
+              <Mail size={16} />
+              Kontakt oss
+            </a>
+          </li>
+        </ul>
       </div>
 
       {/* Legal */}
