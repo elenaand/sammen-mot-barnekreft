@@ -24,17 +24,21 @@ export default function Header() {
         </div>
 
         {/* Nav */}
-        <div className="flex flex-col gap-2 pl-4 md:pl-0 text-xs">
+        <ul
+          className="flex flex-col gap-2 pl-4 md:pl-0 text-xs"
+          aria-label="Sidemeny"
+        >
           {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="uppercase underline tracking-widest hover:underline-offset-2 transition-colors p-1 hover:text-yellow-400"
-            >
-              {link.label}
-            </Link>
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="uppercase underline tracking-widest hover:underline-offset-2 transition-colors p-1 hover:text-yellow-400"
+              >
+                {link.label}
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
         {/* Social */}
         <div className="pl-4 md:pl-0 text-xs">

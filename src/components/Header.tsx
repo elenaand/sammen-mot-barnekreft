@@ -55,7 +55,7 @@ export default function Header() {
       {/* Mobile dropdown */}
       {isOpen && (
         <div className="md:hidden absolute top-16 left-0 w-full bg-white border-b border-black/10 z-40">
-          <nav className="flex flex-col  ">
+          <nav className="flex flex-col">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
