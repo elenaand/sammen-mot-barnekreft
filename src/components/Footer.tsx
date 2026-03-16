@@ -1,29 +1,21 @@
 "use client";
 
-import Link from "next/link";
-import { Instagram, Mail } from "lucide-react";
-
-const navLinks = [
-  { href: "/", label: "Om oss" },
-  { href: "/kunstauksjon", label: "Kunstauksjon" },
-  { href: "/armbaand", label: "Armbånd" },
-];
+import { Instagram, Mail, Rainbow } from "lucide-react";
 
 export default function Header() {
   return (
     <footer className="bg-gray-800 text-white">
-      <div className="max-w-5xl mx-auto px-8 py-12 flex flex-col md:flex-row md:justify-between gap-10">
+      <div className="max-w-3xl mx-auto px-8 py-12 flex flex-col md:flex-row md:justify-between gap-10 items-center">
         {/* Brand */}
-        <div>
-          <span className="border-l-4 border-yellow-400 pl-3 font-bold uppercase tracking-wide text-md">
-            Sammen mot barnekreft
-          </span>
-          <p className="mt-3 text-sm md:text-lg text-white pl-4">
-            Kunstauksjon til inntekt for Barnekreftforeningen
-          </p>
+        <div className="font-semibold text-md flex items-center gap-4">
+          <Rainbow size={48} className="text-pink-dark" />
+          <div className="flex flex-col">
+            <span>Sammen</span>
+            <span>mot barnekreft</span>
+          </div>
         </div>
 
-        {/* Nav */}
+        {/* Nav
         <ul
           className="flex flex-col gap-2 pl-4 md:pl-0 text-xs"
           aria-label="Sidemeny"
@@ -38,18 +30,18 @@ export default function Header() {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
         {/* Social */}
         <ul
-          className="flex flex-col gap-2 pl-4 md:pl-0 text-xs"
+          className="flex flex-col md:flex-row pl-4 md:pl-0 text-sm gap-4"
           aria-label="Sidemeny"
         >
           <li>
             <a
               href="https://www.instagram.com/sammenmotbarnekreft"
               target="_blank"
-              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
+              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-pink-dark"
             >
               <Instagram size={16} />
               Instagram
@@ -59,7 +51,7 @@ export default function Header() {
             <a
               href="mailto:hei@sammenmotbarnekreft.no"
               target="_blank"
-              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
+              className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-pink-dark"
             >
               <Mail size={16} />
               Kontakt oss

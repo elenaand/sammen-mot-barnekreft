@@ -28,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="no">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen `}
       >
         <Header />
-        <main className="grow p-8 md:px-16 md:py-8 max-w-3xl prose">
+        <main className="grow p-8 md:px-16 md:py-8 max-w-3xl prose ">
           {children}
         </main>
         <Footer />
