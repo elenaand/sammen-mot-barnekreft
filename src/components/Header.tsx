@@ -6,9 +6,10 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: "/", label: "Om oss" },
   { href: "/kunstauksjon", label: "Kunstauksjon" },
   { href: "/armbaand", label: "Armbånd" },
+  { href: "/samarbeidspartnere", label: "Samarbeidspartnere" },
+  { href: "/om-oss", label: "Om oss" },
 ];
 
 export default function Header() {

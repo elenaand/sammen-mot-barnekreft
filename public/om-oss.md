@@ -6,10 +6,4 @@ Håper du har lyst til å bli med på denne reisen med oss!
 
 ## Kontakt oss
 
-[example@example.com](mailto:example@example.com)
-
-## Samarbeidspartnere
-
-Vi er stolte av å samarbeide med
-
-[link til partner](http://example.com)
+[hei@sammenmotbarnekreft.no](mailto:hei@sammenmotbarnekreft.no)
