@@ -4,6 +4,8 @@ Dette er et [Next.js](https://nextjs.org) prosjekt bootstrappet med [`create-nex
 
 Dette repoet er for foreningen 🌈 Sammen mot barnekreft. Målet er å samle inn penger til barnekreftforeningen ved å arrangere kunstauksjon, med mer. 
 
+Per nå kan den nåes på: https://elenaand.github.io/sammen-mot-barnekreft/
+
 ## Gjøre endringer
 Gå til `/public` mappen. Alle filene du finner her representerer en url på siden.
 
