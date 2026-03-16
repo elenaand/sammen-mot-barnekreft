@@ -57,7 +57,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="mailto:example@example.com"
+              href="mailto:hei@sammenmotbarnekreft.no"
               target="_blank"
               className="flex gap-2 underline items-center uppercase hover:underline-offset-2 transition-colors hover:text-yellow-400"
             >
@@ -70,7 +70,7 @@ export default function Header() {
 
       {/* Legal */}
       <div className="border-t border-white/10 px-8 py-4 text-center text-xs md:text-sm">
-        org.nr: 123 456 789 | © 2026 Sammen mot barnekreft
+        org.nr: 936 473 881 | © 2026 Sammen mot barnekreft
       </div>
     </footer>
   );
